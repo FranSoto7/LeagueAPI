@@ -1,0 +1,19 @@
+{
+  "name": "leagueapi",
+  "version": "1.0.0",
+  "description": "Generic league competition managing software",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Fran Soto",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "express": "^4.17.1",
+    "mocha": "^8.2.1",
+    "mongoose": "^5.10.14",
+    "supertest": "^6.0.1"
+  }
+}
