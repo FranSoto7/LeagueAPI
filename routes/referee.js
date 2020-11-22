@@ -36,7 +36,6 @@ router.post('/', async (req,res)=>{
     })
     
     const result = await referee.save()
-
     res.send(result)
 })
 
@@ -46,9 +45,6 @@ router.put('/:id',async (req,res)=>{
     if(req.body.name!=undefined) updateValues.name = req.body.name
     if(req.body.age!=undefined) updateValues.age = req.body.age
     if(req.body.active!=undefined) updateValues.active = req.body.active
-    
-    console.log(updateValues)
-    console.log(req.params.id)
 
     const result = await Referee.findByIdAndUpdate(req.params.id, updateValues, {new: true})
     res.send(result)
@@ -58,9 +54,7 @@ router.put('/:id',async (req,res)=>{
 router.delete('/:id', async (req,res)=>{
     const result = await Referee.findByIdAndRemove(req.params.id)
     res.send(result)
-
 })
 
 module.exports = router
 exports.Referee = Referee
-exports.cadenita = 'hola'

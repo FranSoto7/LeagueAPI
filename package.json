@@ -11,9 +11,12 @@
   "dependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
+    "config": "^3.3.2",
     "express": "^4.17.1",
     "mocha": "^8.2.1",
-    "mongoose": "^5.10.14",
+    "mongoose": "^5.10.14"
+  },
+  "devDependencies": {
     "supertest": "^6.0.1"
   }
 }

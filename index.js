@@ -3,10 +3,12 @@ const app = express()
 const port = 3000
 const mongoose = require('mongoose')
 const referee = require('./routes/referee')
+const config = require('config')
 
-mongoose.connect('mongodb://localhost/LeagueAPI')
-    .then(() => {console.log('Connected to MongoDB')})
-    .catch(err => {console.log('Couldn\'t connect to mongodb')})
+const db = config.get('db')
+mongoose.connect(db)
+    .then(() => {console.log(`Connected to ${db}`)})
+    .catch(err => {console.log(`Couldnt connect to ${db}`)})
 
 app.use(express.json())
 
