@@ -18,3 +18,8 @@ Create a basic managing software API for an imaginary league. Currently implemen
 - Keep Adding entities (Players, teams...)
 - FULL MERN STACK: MongoDB, Express, React/Redux, NodeJS
 
+## Usage:
+1. Set enviroment variable NODE_ENV to "test" or "default"
+    - Windows: `$env:NODE_ENV="default"`
+    - Linux: `NODE_ENV=default`
+2. Run the application: `node index.js`
